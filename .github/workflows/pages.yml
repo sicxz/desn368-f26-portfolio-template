@@ -2,7 +2,11 @@
 # Leave this file alone. It is GitHub's own "Static HTML" Pages workflow
 # (actions/starter-workflows, pages/static.yml, read November 18, 2026), with the branch set to main.
 #
-# It fails until Pages is switched on: Settings, then Pages, then Source: GitHub Actions.
+# One line is added: the "if" under "deploy". A repository made from the template starts with a commit named
+# "Initial commit", before anyone can switch Pages on. Without the "if", that first run fails and GitHub emails
+# the owner about it (tested November 18, 2026). With it, that one run is skipped.
+#
+# Every later run fails until Pages is switched on: Settings, then Pages, then Source: GitHub Actions.
 name: Deploy static content to Pages
 
 on:
@@ -28,6 +32,7 @@ concurrency:
 jobs:
   # Single deploy job since we're just deploying
   deploy:
+    if: github.event.head_commit.message != 'Initial commit'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
