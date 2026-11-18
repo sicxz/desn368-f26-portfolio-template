@@ -1,0 +1,14 @@
+{
+  // Sets up the Codespace for this repository. Leave this file alone.
+  // The image is GitHub's default Codespaces image. Live Preview shows a page beside its code.
+  "name": "DESN 368 portfolio",
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-vscode.live-server"],
+      "settings": {
+        "livePreview.defaultPreviewPath": "/index.html"
+      }
+    }
+  }
+}
