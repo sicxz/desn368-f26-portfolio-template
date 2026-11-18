@@ -24,8 +24,9 @@ Tick a box by changing `[ ]` to `[x]` in this file. Then commit.
 - [ ] **2. Put each file in its folder.** `style.css` goes in `css/`, images in `images/`, scripts in `js/`. Update every `href` and `src` to match.
 - [ ] **3. Switch Pages on.** Settings, then Pages, then Source: GitHub Actions. Put your live address at the top of this file.
 - [ ] **4. Check the live site.** Your homepage opens at the live address with its styles and every image.
-- [ ] **5. Move the field guide in,** after you turn it in: `projects/field-guide/`.
-- [ ] **6. Build the landing page here:** `projects/landing-page/`. Its build checklist is the README in that folder.
-- [ ] **7. Move in every other project your homepage links to.**
-- [ ] **8. Point every homepage link inside this repository.** A link to a project is `projects/field-guide/`, not a `codepen.app` address.
-- [ ] **9. Cut the last ties to CodePen.** Search the repository for `codepen` and `cdpn`. No page, stylesheet or script loads anything from those addresses. Then save a copy: Code, then Download ZIP.
+- [ ] **5. Move your recipe in:** `projects/recipe/`.
+- [ ] **6. Move your tribute in:** `projects/tribute/`.
+- [ ] **7. Build your field guide here:** `projects/field-guide/`.
+- [ ] **8. Move in any other CodePen project you want to keep.** It can go in any folder you choose inside `projects/`. Not sure what to move? Ask Professor Masingale.
+- [ ] **9. Make your homepage link only to your projects.** Take the old links off the homepage. Link each project by its folder: `projects/recipe/`, not a `codepen.app` address.
+- [ ] **10. Cut the last ties to CodePen.** Search the repository for `codepen` and `cdpn`. No page, stylesheet or script loads anything from those addresses. Then save a copy: Code, then Download ZIP.
