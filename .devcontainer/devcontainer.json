@@ -1,8 +1,9 @@
 {
   // Sets up the Codespace for this repository. Leave this file alone.
-  // The image is GitHub's default Codespaces image. Live Preview shows a page beside its code.
+  // The image is a small Ubuntu one, because this site needs no build tools: GitHub's full default image took
+  // more than three minutes to start on November 18, 2026. Live Preview shows a page beside its code.
   "name": "DESN 368 portfolio",
-  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
   "customizations": {
     "vscode": {
       "extensions": ["ms-vscode.live-server"],
